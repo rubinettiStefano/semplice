@@ -1,0 +1,8 @@
+<h1 #titolo [ngStyle]="{'background-color':colore,'font-size':grandezza()}" (wheel)="ciclacolori($event)" (click)="cosaDaFareQuandoAvvieneClick()"> {{getStringaCasuale() | titlecase}}</h1>
+
+
+
+<app-figlio  (avvertitorePadreEvent)="stampaEventoFiglio($event)" [valoreDiMioPadre]="ilMioMotto"></app-figlio>
+
+<br/><br/>
+<a  [routerLink]="['/2']">VAI COMPONENTE 2</a>
